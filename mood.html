@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发现</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/static.css">
+</head>
+<body>
+    <div class="container clearfix">
+        <a name="Top"></a>
+        <div class="top clearfix">
+            <a href="#">客户端&nbsp;</a>&nbsp;|&nbsp;
+            <a href="#">手机版&nbsp;</a>&nbsp;|&nbsp;
+            <a href="#">收集工具&nbsp;</a>&nbsp;
+            <a href="register.html" class="register">注册 </a>&nbsp;
+            <a href="login.html" class="login">登录 </a>&nbsp;
+            <a href="#" class="email"></a>&nbsp;
+            <a href="#" class="horn"></a>&nbsp;
+            <a href="#" class="userImg"></a>&nbsp;
+            <a href="#" class="user"></a>
+        </div>
+        <nav class="clearfix">
+            <img src="img/logo.png" alt="" class="logo">
+            <ul class="title">
+                <li>
+                    <a href="index.html">广播</a>
+                    <img src="img/nav-line.png" alt="">
+                </li>
+                <li>
+                    <a href="find.html">发现</a>
+                    <a href="text.html"><span>文章</span></a>
+                    <a href="#"><span>心情</span></a>
+                    <img src="img/nav-line.png" alt="">
+                </li>
+                <li>
+                    <a href="#">专辑</a>
+                    <a href="#"><span>生活</span></a>
+                    <a href="#"><span>时尚</span></a>
+                    <a href="#"><span>兴趣</span></a>
+                    <img src="img/nav-line.png" alt="">
+                </li>
+                <li>
+                    <a href="#">Wiki</a>
+                    <img src="img/nav-line.png" alt="">
+                </li>
+                <li>
+                    <a href="#">小组</a>
+                </li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="请输入要查询的内容">
+                <img src="img/search.png" alt="">
+                <ul></ul>
+            </div>
+            <img src="img/music_off.png" alt="" class="music">
+            <audio id="player" src="audio/yssy.mp3" preload="preload" loop="loop"></audio>
+        </nav>
+        <div class="main clearfix">
+            <div class="adv">
+                <img src="img/banner2.png" alt="">
+            </div>
+            <div class="body clearfix">
+                <div class="article clearfix">
+                    <p>普罗旺斯</p>
+                    <a href="#"><i></i></a>
+                    <a href="#"><i></i></a>
+                    <a href="#"><i></i></a>
+                    <hr>
+                    <img src="img/plsw.png" alt="">
+                    <img src="img/plsw2.png" alt="">
+                    <img src="img/plsw3.png" alt="">
+                    <hr>
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style">
+                        <span class="jiathis_txt">分享到：</span>
+                        <a class="jiathis_button_tools_1"></a>
+                        <a class="jiathis_button_tools_2"></a>
+                        <a class="jiathis_button_tools_3"></a>
+                        <a class="jiathis_button_tools_4"></a>
+                        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+                        <a class="jiathis_counter_style"></a>
+                    </div>
+                    <!-- JiaThis Button END -->
+                </div>
+            </div>
+            <div class="side clearfix">
+                <div class="fun">
+                    <a href="#"><span>收藏</span></a>
+                    <a href="#"><span>喜欢</span></a>
+                    <a href="#"><span>评论</span></a>
+                </div>
+                <div class="author clearfix">
+                    <img src="img/use1.jpg" alt="" class="log">
+                    <div>
+                        <span>作响_</span><br>
+                        <span>积分 : 30 等级 : 5</span>
+                    </div>
+                </div>
+                <!-- JiaThis Button BEGIN -->
+                <div class="jiathis_style_32x32 icon clearfix">
+                    <a class="jiathis_button_qzone"></a>
+                    <a class="jiathis_button_tsina"></a>
+                    <a class="jiathis_button_tqq"></a>
+                    <a class="jiathis_button_weixin"></a>
+                    <a class="jiathis_button_renren"></a>
+                    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                </div>
+                <!-- JiaThis Button END -->
+                <div class="hot">
+                    <h4>热门推荐</h4>
+                    <hr>
+                    <ul>
+                        <li>那些年，我们一起旅行过的地方</li>
+                        <li>那些年，我们一起旅行过的地方</li>
+                        <li>那些年，我们一起旅行过的地方</li>
+                        <li>那些年，我们一起旅行过的地方</li>
+                        <li>那些年，我们一起旅行过的地方</li>
+                        <li>那些年，我们一起旅行过的地方</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="#Top" class="returnTop"><img src="img/top.jpg" alt=""></a>
+        <img src="img/adv.jpg" alt="" class="advice">
+        <div class="text">
+            <p>你对本页面满意？</p>
+            <textarea rows="8"></textarea>
+            <button>提交</button>
+        </div>
+        <footer>
+            <p>版权所有&copy;爱旅行</p>
+        </footer>
+    </div>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://v3.jiathis.com/code/jia.js?uid=92257"></script>
+    <script src="js/getUsername.js"></script>
+    <script>
+        //固定导航条
+        var Height = $(".top").height();
+        $(window).scroll(function(){
+            var docScrollTop = $(document).scrollTop();
+            if(docScrollTop>Height){
+                $("nav").css({
+                    "position": "fixed",
+                    "zIndex": 999,
+                    "top":0
+                });
+            }else{
+                $("nav").css({
+                    "position":"static" //---静态定位
+                });
+            }
+        });
+    </script>
+</body>
+</html>

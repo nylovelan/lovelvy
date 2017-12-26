@@ -1,0 +1,19 @@
+#mainn{
+	position: relative;
+	margin: 0 auto;
+	width: 980px;
+}
+#mainn .box{
+	float: left;
+	padding: 15px 0 0 15px;
+}
+#mainn .box .picc{
+	padding: 10px;
+	border: 1px solid #CCCCCC;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #CCCCCC;
+}
+.picc img{
+	width: 240px;
+	height: auto;
+}

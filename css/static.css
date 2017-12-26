@@ -1,0 +1,158 @@
+.main .adv img{
+    margin-bottom: 10px;
+    width: 980px;
+}
+.main .body{
+    float: left;
+    margin-bottom: 16px;
+    width: 731px;
+    height: auto;
+    background: #fff;
+}
+.body div{
+    margin: 14px;
+    padding: 14px 0;
+}
+.body h3{
+    margin-left: -10px;
+    color: #333;
+    font-size: 20px;
+}
+.body .rec figure{
+    float: left;
+    margin: 5px;
+    width: 224px;
+}
+.body .rec figure img{
+    width: 100%;
+}
+.body .rec figure figcaption{
+    line-height: 30px;
+    text-align: center;
+    color: #606060;
+    font-size: 12px;
+}
+.body .new{
+    margin: 0;
+    border-bottom: 1px dashed #ccc;
+}
+.body .new img{
+    float: left;
+    margin: 0 10px;
+    width: 240px;
+}
+.body .span{
+    float: left;
+    margin: 0 10px;
+    width: 420px;
+}
+.body .span p{
+    line-height: 30px;
+    color: #333;
+    font-size: 14px;
+    font-weight: 700;
+}
+.body .span span{
+    color: #606060;
+    font-size: 12px;
+}
+.body .yem span{
+    margin: 0 2px;
+    font-size: 14px;
+    color: #606060;
+}
+.main .side{
+    float: right;
+    width: 240px;
+}
+.side .icon{
+    padding: 10px 12px;
+    background: #fff;
+}
+.side .hot{
+    margin: 10px 0 0 0;
+    padding: 10px 10px 20px 10px;
+    background: #fff;
+}
+.side .hot ul li{
+    padding: 10px 0 6px 10px;
+    color: #606060;
+    font-size: 14px;
+    border-bottom: 1px dashed #ccc;
+}
+/*文章*/
+.article{
+    padding: 14px;
+}
+.article p{
+    float: left;
+    margin: 0 10px;
+    width: 540px;
+    font-size: 28px;
+}
+.article a{
+    float: left;
+    margin: 5px;
+}
+.article hr{
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+}
+.article a i{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url("../img/turn.png") no-repeat;
+    background-position: 0 0;
+}
+.article a:nth-child(3) i{
+    background-position: 0 -238px;
+}
+.article a:nth-child(4) i{
+    background-position: 0 -48px;
+}
+.article a:hover i{
+    background-position: 0 -95px;
+}
+.article a:nth-child(3):hover i{
+    background-position: 0 -190px;
+}
+.article a:nth-child(4):hover i{
+    background-position: 0 -143px;
+}
+.article .span span{
+    font-size: 16px;
+    color: #9a9a9a;
+}
+.article .span p{
+    text-indent: 2em;
+    color: #333;
+    font-weight: normal;
+}
+.side .fun, .side .author{
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+}
+.side .fun a{
+    margin: 10px;
+    color: #333;
+}
+.side .author img{
+    float: left;
+}
+.side .author div{
+    float: left;
+    margin: 0 10px;
+    text-align: left;
+}
+.side .author div span{
+    font-size: 12px;
+}
+/*心情*/
+.article img{
+    width: 100%;
+}

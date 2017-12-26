@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="content clearfix">
+        <div class="left">
+            <p>发现更多精彩！</p>
+            <div class="img">
+                <img src="img/log1.jpg" alt="">
+                <img src="img/log2.jpg" alt="">
+                <img src="img/log3.jpg" alt="">
+                <img src="img/log4.jpg" alt="">
+            </div>
+        </div>
+        <div class="right">
+            <h3>用户登录</h3>
+            <hr>
+            <form action="index.html" onsubmit="return Login()" method="post">
+                <input type="text" placeholder="微博账号/QQ号码/电子邮箱" id="Username">
+                <input type="password" placeholder="密码" id="Pwd">
+                <input type="submit" value="登 录" class="login">
+                <input type="checkbox" class="ck" checked="checked"><span>下次自动登录</span>
+            </form>
+            <i class="log1"></i><i class="log2"></i><br>
+            <p>
+                <a href="#">忘记密码？</a>|
+                <a href="register.html">注册新账号</a>|
+                <a href="#">意见反馈</a>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p>版权所有&copy;爱旅行</p>
+    </footer>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        function setCookie(key,value,time){
+            var oDate = new Date();
+            oDate.setDate(oDate.getDate() + time);
+            document.cookie=key+'='+encodeURI(value)+';expires='+oDate.toGMTString();
+        }
+        //获取cookie
+        function getCookie(key){
+            var arr1 = document.cookie.split('; ');
+            for(var i=0;i<arr1.length;i++){
+                var arr2  = arr1[i].split('=');
+                if(arr2[0]==key){
+                    return decodeURI(arr2[1]);
+                }
+            }
+        }
+        //删除cookie
+        function removeCookie(key){
+            setCookie(key,'',-1);
+        }
+        $(function () {
+            if(getCookie("username")){
+                $("#Username").val(getCookie("username"));
+                if($(".ck").get(0).checked){
+                    $("#Pwd").val(getCookie("pwd"));
+                }
+            }
+        });
+        function Login() {
+            if($("#Pwd").val() == ""){
+                alert("密码不能为空");
+                return false;
+            }else if($("#Pwd").val() == getCookie("pwd")){
+                alert("信息正确，正在跳转...");
+                return true;
+            }else {
+                alert("密码不正确");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
